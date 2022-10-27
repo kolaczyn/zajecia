@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        #div1 {
+            position: absolute;
+            width: 100px;
+            height: 200px;
+            left: 100px;
+            top: 150px;
+            border: 10px solid darkblue;
+            margin: 27px;
+            padding: 15px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="form1" action="">
+        <input type="number" name="a1" size="5">
+        <input type="button" value="+" onclick="Dodaj()">
+        <input type="button" value="-" onclick="Odejmij()">
+        <input type="button" value="*" onclick="Mnoz()">
+        <input type="button" value="/" onclick="Dziel()">
+        <input type="number" name="b2" size="5"><br>
+        <hr>
+        <input type="text" name="w1" size="5">
+        <hr>
+        <input type="button" value="√" onclick="Pierwiastek()">
+        <input type="button" value="!" onclick="Silnia()">
+        <input type="button" value="a^b" onclick="Potega()">
+    </form>
+    <form name="form2" id="form2">
+        <fieldset>
+            <legend>manipulator div</legend>
+            left
+            <input type="text" name="a2" size="5"><br>
+            top
+            <input type="text" name="b2" size="5"><br>
+            kolor
+            <input type="color" value="#ff0000" name="col">
+
+            <input type="text" name="style">
+
+            <input type="number" name="width">
+
+            <br>
+            <input type="button" value="Zmiana div" onClick="Zmiana()">
+        </fieldset>
+    </form>
+    <div id="div1" onclick="Powitanie()">div1</div>
+    <script src="index.js"></script>
+</body>
+
+</html>
