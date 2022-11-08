@@ -28,22 +28,25 @@ function Pierwiastek() {
   alert("Wartość pierwiastka z liczby " + x + " wynosi: " + Math.sqrt(x));
 }
 
-// function Silnia() {
-//   let x = prompt("Podaj wartość silni", "");
-//   for (i = 1; i < x; i++) {
-//     x = x * i;
-//   }
-//   alert("Wartość silni z liczby "x);
-// }
+function Silnia() {
+  let x = prompt("Podaj wartość silni", "");
+  // if x=0 lub x=1 to silnia = 1
+  let silnia = 1;
+  for (i = 1; i <= x; i++) {
+    silnia *= i;
+  }
+  alert("Wartość silni z liczby " + x + " wynosi: " + silnia);
+}
 
-// function Potega() {
-//   let a = prompt("Podaj wartość pierwszej liczby", "");
-//   let b = prompt("Podaj wartość drugiej liczby", "");
-//   for (i = 1; i < b; i++) {
-//     potega += a * i;
-//   }
-//   alert("Potega wynosi: " + potega);
-// }
+function Potega() {
+  let a = prompt("Podaj wartość pierwszej liczby", "");
+  let b = prompt("Podaj wartość drugiej liczby", "");
+  let potega = 1;
+  for (i = 1; i <= b; i++) {
+    potega *= a;
+  }
+  alert("Potega wynosi: " + potega);
+}
 
 function Zmiana() {
   div1.style.left = form2.a2.value + "px";
@@ -51,5 +54,4 @@ function Zmiana() {
   div1.style.borderColor = form2.col.value;
   div1.style.borderStyle = form2.style.value;
   div1.style.borderWidth = form2.width.value + "px";
-  //   borderStyle borderWidth
 }
