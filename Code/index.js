@@ -30,7 +30,6 @@ function Pierwiastek() {
 
 function Silnia() {
   let x = prompt("Podaj wartość silni", "");
-  // if x=0 lub x=1 to silnia = 1
   let silnia = 1;
   for (i = 1; i <= x; i++) {
     silnia *= i;
