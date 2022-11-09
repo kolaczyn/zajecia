@@ -23,39 +23,39 @@
 </head>
 
 <body>
-    <form name="form1" action="">
-        <input type="number" name="a1" size="5">
-        <input type="button" value="+" onclick="Dodaj()">
-        <input type="button" value="-" onclick="Odejmij()">
-        <input type="button" value="*" onclick="Mnoz()">
-        <input type="button" value="/" onclick="Dziel()">
-        <input type="number" name="b2" size="5"><br>
+    <form name="calcForm" action="">
+        <input type="number" name="leftNum" size="5">
+        <input type="button" value="+" onclick="add()">
+        <input type="button" value="-" onclick="subtract()">
+        <input type="button" value="*" onclick="multiply()">
+        <input type="button" value="/" onclick="divide()">
+        <input type="number" name="rightNum" size="5"><br>
         <hr>
-        <input type="text" name="w1" size="5">
+        <input type="text" name="result" size="5">
         <hr>
-        <input type="button" value="√" onclick="Pierwiastek()">
-        <input type="button" value="!" onclick="Silnia()">
-        <input type="button" value="a^b" onclick="Potega()">
+        <input type="button" value="√" onclick="sqrt()">
+        <input type="button" value="!" onclick="factorial()">
+        <input type="button" value="a^b" onclick="power()">
     </form>
-    <form name="form2" id="form2">
+    <form name="restyleForm" id="form2">
         <fieldset>
             <legend>manipulator div</legend>
             left
-            <input type="text" name="a2" size="5"><br>
+            <input type="text" name="top" size="5"><br>
             top
-            <input type="text" name="b2" size="5"><br>
+            <input type="text" name="left" size="5"><br>
             kolor
-            <input type="color" value="#ff0000" name="col">
+            <input type="color" value="#ff0000" name="borderColor">
             styl
-            <input type="text" name="style">
+            <input type="text" name="borderStyle">
             długość ramki
-            <input type="number" name="width">
+            <input type="number" name="borderWidth">
 
             <br>
-            <input type="button" value="Zmiana div" onClick="Zmiana()">
+            <input type="button" value="Zmiana div" onClick="changeDivStyle()">
         </fieldset>
     </form>
-    <div id="div1" onclick="Powitanie()">div1</div>
+    <div id="divToRestyle" onclick="greet()">div1</div>
     <script src="index.js"></script>
 </body>
 
